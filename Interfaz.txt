@@ -20,7 +20,7 @@
             System.out.println("Año: "+info[2]);
         }
         
-    }//GEN-LAST:event_botonAceptarActionPerformed
+    }
 
     public boolean isNumeric(String dato){
         

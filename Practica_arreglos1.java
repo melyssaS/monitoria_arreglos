@@ -9,10 +9,7 @@ import java.util.Scanner;
 public class Practica_arreglos1 {
 
     public static void main(String[] args) {
-        
-        Interfaz interfaz= new Interfaz();
-        interfaz.setVisible(true);
-        
+ 
         Scanner sc = new Scanner(System.in);
 
         //Lo creamos
