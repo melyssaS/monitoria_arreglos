@@ -1,0 +1,37 @@
+ private void botonAceptarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_botonAceptarActionPerformed
+       String nombre = textNombre.getText();
+       
+        if (!nombre.isEmpty()) {
+            System.out.println("El nombre es "+nombre);
+        }
+       
+        
+        if (isNumeric(textEdad.getText())) {
+            int edad = Integer.parseInt(textEdad.getText());
+            System.out.println("La edad es: "+edad);
+        }
+        
+        String nacimiento = textNacimiento.getText();
+        
+        if (!nacimiento.isEmpty()) {
+            String [] info = nacimiento.split("/");
+            System.out.println("Dia: "+info[0]);
+            System.out.println("Mes: "+ info[1]);
+            System.out.println("Año: "+info[2]);
+        }
+        
+    }//GEN-LAST:event_botonAceptarActionPerformed
+
+    public boolean isNumeric(String dato){
+        
+        try {
+            Integer.parseInt(dato);
+            return true;
+        } catch (Exception e) {
+            
+            return false;
+        }
+    }
+    
+    
+   
